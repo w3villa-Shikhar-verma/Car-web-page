@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif ;
+}
+
+body{
+    background: #eaeaea;
+}
+
+/* For screens smaller than 768px (typical smartphones) */
+@media (max-width: 768px) {
+    .headder {
+        padding: 15px 8px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar {
+        /* display: none; You can implement a mobile menu here */
+    }
+
+    .social {
+        width: auto;
+    }
+
+    .social a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+    
+    .home-img {
+        /* display: none; Hide the image for smaller screens if it's not essential */
+    }
+}
+
+/* For screens smaller than 768px (typical smartphones) */
+@media (max-width: 768px) {
+    .headder {
+        padding: 15px 8px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    /* Additional styles for smaller screens go here */
+}
+
+
+/* Additional media queries for other screen sizes can be added as needed. */
+
+
+
+.headder{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 8px;
+    background: transparent;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color:#222 ;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: .5;
+    transition: .5s;
+}
+#hov{
+    display: inline-block;
+   
+    transition: .5s;
+}
+#hov:hover{
+    transform: translateY(-4px);
+}
+
+
+.navbar{
+    transition: .5s;
+    /* background-color: #c07373; */
+}
+
+a{
+    transition: .5s;
+}
+a:hover{
+
+  transform: translateY(-2px);
+
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+  
+}
+
+.navbar a:hover,
+.navbar a.active{
+      color: #6883e7;
+}
+
+
+
+.social{
+    /* background-color: aquamarine; */
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.social a{
+    width: 40px;
+    height: 40px;
+    /* background-color: #617ee7; */
+    text-decoration: none;
+    /* border: 2px solid transparent; */
+    justify-content: center;
+    /* transform: rotate(28deg); */
+    transition: .5s;
+    
+}
+#hov1{
+    transition: .5s;
+}
+#hov1:hover{
+   transform: translateY(5px);
+}
+
+
+.social a i{
+      font-size: 24px;
+      color: #eaeaea;
+      padding: 4px;
+      /* transform: rotate(-27deg);    */
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px 8% 0px;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.home-content{
+  /* background-color: #ddb4b4; */
+  max-width: 630px;
+  min-width: 400px;
+}
+
+.home-content h1{
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.home-content h3{
+ font-size: 40px;
+   color: #617ee7;
+
+}
+.home-content p{
+    font-size: 16px;
+    margin: 15px 0 30px;
+}
+.btn{
+    display: inline-block;
+  text-decoration: none;
+  color: rgb(87, 68, 43);
+   font-size: 22px;
+   border: 2px solid #f09d9d;
+   background-color:#f09d9d;
+   padding: 10px 12px;
+   border-radius: 25px;
+   font-weight: 600;
+   transition: .5s;
+   letter-spacing: 1px;
+}
+.btn:hover{
+    background-color: #f36b6b;
+}
+
+.home-img{
+    /* background-color: #f09d9d; */
+    position: relative;
+    right: -7%;
+    width: 450px;
+    height: 540px;
+    transform: rotate(45deg);
+    
+}
+
+.home-img .rhombus{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    /* background: #617ee7; */
+    border: 25px solid rgb(107, 104, 104);
+    box-shadow: -15px -2px 20px 21px gray;
+    
+    /* transform: rotate(-45deg); */
+}
+
+.home-img .rhombus img{
+
+ position: absolute;
+ top: 110px;
+ left: -250px;
+  max-width: 750px;
+  transform: rotate(-45deg);
+}
+
+
+.home .rhombus2{
+    
+  position: absolute;
+  top: -25%;
+  right: -25%;
+  width: 700px;
+  height: 700px;
+  background: rgb(107, 104, 104);
+  transform: rotate(45deg);
+  z-index: -1;
+}
